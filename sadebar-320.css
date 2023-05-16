@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "TT Lakes Compressed";
+  src: url("/TTLakes/TTLakesCompressed-Regular.eot");
+  src: local("TT Lakes Compressed Regular"), local("TTLakesCompressed-Regular"),
+    url("TTLakesCompressed-Regular.eot?#iefix") format("embedded-opentype"),
+    url("TTLakesCompressed-Regular.woff") format("woff"),
+    url("TTLakesCompressed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "TT Lakes Compressed", "italic", sans-serif;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 320px;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.container {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.sidebar-ul {
+  padding: 0;
+}
+
+.sidebar-li {
+  list-style: none;
+}
+
+.button-icon {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-icon:hover {
+  animation-name: animation_icon;
+  animation-duration: 0.3s;
+  opacity: 0.9;
+}
+
+@keyframes animation_icon {
+  from {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.sidebar__header {
+  margin-top: 18.73px;
+  margin-bottom: 50.46px;
+}
+
+.sidebar-header__buttons {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.sidebar-header__btn:nth-child(1) {
+  margin-right: 16.73px;
+}
+
+.sidebar-header__btn:nth-child(2) {
+  margin-right: 78.27px;
+}
+
+.sidebar-header__btn--icon-close {
+  background: url("/icon/close.svg");
+}
+
+.sidebar-header__btn--icon-search {
+  background: url("/icon/search.svg");
+}
+
+.sidebar-header__btn--img-logo {
+  display: block;
+  width: 97px;
+  height: 51px;
+  background: url("/icon/Group.svg") no-repeat;
+}
+
+.sidebar-header__btn:nth-child(2):hover {
+  animation-name: animation-icon-logo;
+  animation-duration: 0.3s;
+}
+
+@keyframes animation-icon-logo {
+  from {
+    transform: scale(0.9);
+  }
+}
+
+.sidebar__main {
+  position: relative;
+  margin-bottom: 268px;
+}
+
+.sidebar-main__paragraph-items {
+  margin: 0;
+}
+
+.sidebar-main__paragraph-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.sidebar-main__paragraph-item:hover::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: -5px;
+  display: block;
+  width: 4px;
+  height: 32px;
+  background: #41f6d7;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.sidebar-main__paragraph-item:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-main__paragraph-item a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+}
+
+.sidebar-main__paragraph-item a:hover {
+  color: #7e7e82;
+}
+
+.sidebar-footer__buttons {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.sidebar-footer__btn {
+  margin-right: 16px;
+}
+
+.sidebar-footer__btn:last-child {
+  margin-right: 0;
+}
+
+.sidebar-footer__btn--icon-call {
+  background: url("/icon/call.svg");
+}
+
+.sidebar-footer__btn--icon-chat {
+  background: url("/icon/chat.svg");
+}
+
+.sidebar-footer__btn--icon-profile {
+  background: url("/icon/profile.svg");
+}
+
+.sidebar-footer__items-contact {
+  margin-bottom: 40px;
+}
+
+.sidebar-footer-item__contact {
+  display: block;
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.sidebar-footer-item__contact:nth-child(1) {
+  margin-bottom: 12px;
+}
+
+.sidebar-footer-item__contact:nth-child(1) {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+}
+
+.sidebar-footer-item__contact:nth-child(2) {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  font-weight: bold;
+}
+
+.sidebar-footer-item__contact:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+.sidebar-footer__translation-buttons {
+  display: flex;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.sidebar-footer-translation__btn {
+  margin-right: 7px;
+}
+
+.sidebar-footer-translation__btn:last-child {
+  margin-right: 0;
+}
+
+.sidebar-footer__btn--checked {
+  display: none;
+}
+
+.sidebar-footer__btn--checked:checked + .sidebar-footer__btn--checked-text{
+  color: #7E7E82;
+}
