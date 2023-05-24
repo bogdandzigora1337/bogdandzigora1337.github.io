@@ -32,12 +32,12 @@ btnHiddenCard.addEventListener("click", function () {
     btnHiddenCard.children[1].textContent = "Скрыть";
     btnHiddenCard.children[1].style.paddingLeft = "7px";
     btnHiddenCard.children[0].style.top = "-3px";
-    btnHiddenCard.children[0].src = "/icon/expand-close.svg";
+    btnHiddenCard.children[0].src = "/foo/icon/expand-close.svg";
     btnHiddenCard.style.marginBottom = "14px";
   } else {
     btnHiddenCard.children[1].textContent = "Показать все";
     btnHiddenCard.children[1].style.paddingLeft = "0";
-    btnHiddenCard.children[0].src = "/icon/icon-open.svg";
+    btnHiddenCard.children[0].src = "/foo/icon/icon-open.svg";
     btnHiddenCard.children[0].style.top = "3px";
     btnHiddenCard.style.marginBottom = "32px";
   }
